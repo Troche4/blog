@@ -9,8 +9,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/posts`
+      }
+    },
+    `gatsby-transformer-remark`,
   ],
 }
